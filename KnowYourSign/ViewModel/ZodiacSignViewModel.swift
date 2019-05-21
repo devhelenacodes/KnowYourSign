@@ -28,7 +28,6 @@ class ZodiacSigns {
         signs.append(ZodiacSign(name: SignNames.Aquarius.rawValue, startDate: createDateFromComp(month: 01, day: 20), endDate: createDateFromComp(month: 2, day: 18)))
         signs.append(ZodiacSign(name: SignNames.Pisces.rawValue, startDate: createDateFromComp(month: 02, day: 19), endDate: createDateFromComp(month: 3, day: 20)))
         
-        
     }
     
     func createDateFromComp(month: Int, day: Int) -> Date {
