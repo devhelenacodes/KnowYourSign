@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 public enum SignNames : String {
     case Aries = "Aries"
     case Taurus = "Taurus"

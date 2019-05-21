@@ -12,12 +12,7 @@ internal final class UserSignViewModel {
     private var user = [User]()
     private var signs = [ZodiacSign]()
     
-    func setSigns() {
-        ZodiacSigns.shared.addSigns()
-    }
-    
     func getSign(from date: Date) -> String {
-        
         let items = ZodiacSigns.shared.signs
         let total = items.count - 1
         let horoscope : String?
@@ -29,10 +24,17 @@ internal final class UserSignViewModel {
                 i = total
                 return horoscope ?? "Pisces"
             }
-            
             i = i + 1
         }
         
         return "Pisces"
+    }
+    
+    func convertDate(from dateString: String) -> Date {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .long
+        let newDate = dateFormatter.date(from: dateString)!
+        
+        return newDate
     }
 }
