@@ -85,6 +85,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             birthDateLabel = selectedDate
             birthDateField.text = birthDateLabel
         }
+        
         testDate = datePicker.date
         resultsStrLabel = viewModel.getSign(from: testDate!)
         resultsLabel.text =  viewModel.setLabelString(name: nameField.text, sign: resultsStrLabel)

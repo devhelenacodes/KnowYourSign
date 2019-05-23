@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		79E1F1F72295C63000450318 /* CardLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E1F1F62295C63000450318 /* CardLayout.swift */; };
 		79E31CED2294275600C5A47E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E31CEC2294275600C5A47E /* AppDelegate.swift */; };
 		79E31CEF2294275600C5A47E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E31CEE2294275600C5A47E /* ViewController.swift */; };
 		79E31CF22294275600C5A47E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E31CF02294275600C5A47E /* Main.storyboard */; };
@@ -18,6 +17,7 @@
 		79E31D032294335E00C5A47E /* ZodiacSignModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E31D022294335E00C5A47E /* ZodiacSignModel.swift */; };
 		79E31D0B2294745700C5A47E /* KnowYourSignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E31D0A2294745700C5A47E /* KnowYourSignTests.swift */; };
 		79E31D13229486BF00C5A47E /* ZodiacSignViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E31D12229486BF00C5A47E /* ZodiacSignViewModel.swift */; };
+		79F81A002297075A00CCBDA4 /* CardLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F819FF2297075A00CCBDA4 /* CardLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +31,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		79E1F1F62295C63000450318 /* CardLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardLayout.swift; sourceTree = "<group>"; };
 		79E31CE92294275600C5A47E /* KnowYourSign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnowYourSign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E31CEC2294275600C5A47E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79E31CEE2294275600C5A47E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +45,7 @@
 		79E31D0A2294745700C5A47E /* KnowYourSignTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowYourSignTests.swift; sourceTree = "<group>"; };
 		79E31D0C2294745700C5A47E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79E31D12229486BF00C5A47E /* ZodiacSignViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodiacSignViewModel.swift; sourceTree = "<group>"; };
+		79F819FF2297075A00CCBDA4 /* CardLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 			children = (
 				79E31CF02294275600C5A47E /* Main.storyboard */,
 				79E31CEE2294275600C5A47E /* ViewController.swift */,
-				79E1F1F62295C63000450318 /* CardLayout.swift */,
+				79F819FF2297075A00CCBDA4 /* CardLayout.swift */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -237,7 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79E31CEF2294275600C5A47E /* ViewController.swift in Sources */,
-				79E1F1F72295C63000450318 /* CardLayout.swift in Sources */,
+				79F81A002297075A00CCBDA4 /* CardLayout.swift in Sources */,
 				79E31D13229486BF00C5A47E /* ZodiacSignViewModel.swift in Sources */,
 				79E31CFF22942F3800C5A47E /* UserSignModel.swift in Sources */,
 				79E31D0122942F4D00C5A47E /* UserSignViewModel.swift in Sources */,
