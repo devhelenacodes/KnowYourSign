@@ -138,8 +138,8 @@
                         <constraints>
                             <constraint firstItem="IOI-ZS-f4j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="88R-7A-GJr"/>
                             <constraint firstItem="59h-lt-qVu" firstAttribute="top" secondItem="IOI-ZS-f4j" secondAttribute="bottom" constant="19.5" id="W9t-KL-xPG"/>
-                            <constraint firstItem="h32-tV-9b5" firstAttribute="top" secondItem="59h-lt-qVu" secondAttribute="bottom" constant="15" id="Ydj-X7-KcJ"/>
                             <constraint firstItem="IOI-ZS-f4j" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="bc3-bs-ug9"/>
+                            <constraint firstItem="h32-tV-9b5" firstAttribute="top" secondItem="59h-lt-qVu" secondAttribute="bottom" constant="15" id="iDl-uU-dBG"/>
                             <constraint firstItem="59h-lt-qVu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oFG-Ah-STZ"/>
                             <constraint firstItem="h32-tV-9b5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pBV-51-zVw"/>
                         </constraints>

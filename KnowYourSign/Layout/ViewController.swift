@@ -23,7 +23,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     var nameLabel : String?
     var birthDateLabel : String?
     var resultsStrLabel : String?
-    var testDate : Date?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -84,10 +83,9 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         if let selectedDate = dateFormatter.string(from: datePicker.date) as String? {
             birthDateLabel = selectedDate
             birthDateField.text = birthDateLabel
+            resultsStrLabel = viewModel.getSign(from: datePicker.date)
         }
         
-        testDate = datePicker.date
-        resultsStrLabel = viewModel.getSign(from: testDate!)
         resultsLabel.text =  viewModel.setLabelString(name: nameField.text, sign: resultsStrLabel)
 
         resultsLabel.sizeToFit()

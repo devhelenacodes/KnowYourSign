@@ -14,7 +14,7 @@ internal final class UserSignViewModel {
     
     func getSign(from date: Date) -> String {
         let items = ZodiacSigns.shared.signs
-        let total = items.count - 1
+        let total = items.count
         let horoscope : String?
         
         let newDate = Calendar.current.dateComponents([.month, .day], from: date)
