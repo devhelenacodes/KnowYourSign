@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79E1F1F72295C63000450318 /* CardLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E1F1F62295C63000450318 /* CardLayout.swift */; };
+		79E31CED2294275600C5A47E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E31CEC2294275600C5A47E /* AppDelegate.swift */; };
+		79E31CEF2294275600C5A47E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E31CEE2294275600C5A47E /* ViewController.swift */; };
+		79E31CF22294275600C5A47E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E31CF02294275600C5A47E /* Main.storyboard */; };
+		79E31CF42294275800C5A47E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E31CF32294275800C5A47E /* Assets.xcassets */; };
+		79E31CF72294275800C5A47E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E31CF52294275800C5A47E /* LaunchScreen.storyboard */; };
+		79E31CFF22942F3800C5A47E /* UserSignModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E31CFE22942F3800C5A47E /* UserSignModel.swift */; };
+		79E31D0122942F4D00C5A47E /* UserSignViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E31D0022942F4D00C5A47E /* UserSignViewModel.swift */; };
+		79E31D032294335E00C5A47E /* ZodiacSignModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E31D022294335E00C5A47E /* ZodiacSignModel.swift */; };
+		79E31D0B2294745700C5A47E /* KnowYourSignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E31D0A2294745700C5A47E /* KnowYourSignTests.swift */; };
+		79E31D13229486BF00C5A47E /* ZodiacSignViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E31D12229486BF00C5A47E /* ZodiacSignViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79E31D0D2294745700C5A47E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79E31CE12294275600C5A47E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79E31CE82294275600C5A47E;
+			remoteInfo = KnowYourSign;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		79E1F1F62295C63000450318 /* CardLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardLayout.swift; sourceTree = "<group>"; };
+		79E31CE92294275600C5A47E /* KnowYourSign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnowYourSign.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79E31CEC2294275600C5A47E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79E31CEE2294275600C5A47E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		79E31CF12294275600C5A47E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		79E31CF32294275800C5A47E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79E31CF62294275800C5A47E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		79E31CF82294275800C5A47E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79E31CFE22942F3800C5A47E /* UserSignModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignModel.swift; sourceTree = "<group>"; };
+		79E31D0022942F4D00C5A47E /* UserSignViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignViewModel.swift; sourceTree = "<group>"; };
+		79E31D022294335E00C5A47E /* ZodiacSignModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodiacSignModel.swift; sourceTree = "<group>"; };
+		79E31D082294745700C5A47E /* KnowYourSignTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnowYourSignTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79E31D0A2294745700C5A47E /* KnowYourSignTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowYourSignTests.swift; sourceTree = "<group>"; };
+		79E31D0C2294745700C5A47E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79E31D12229486BF00C5A47E /* ZodiacSignViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodiacSignViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79E31CE62294275600C5A47E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E31D052294745700C5A47E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79E1F1F82295C63700450318 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				79E31CF02294275600C5A47E /* Main.storyboard */,
+				79E31CEE2294275600C5A47E /* ViewController.swift */,
+				79E1F1F62295C63000450318 /* CardLayout.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		79E31CE02294275600C5A47E = {
+			isa = PBXGroup;
+			children = (
+				79E31CEB2294275600C5A47E /* KnowYourSign */,
+				79E31D092294745700C5A47E /* KnowYourSignTests */,
+				79E31CEA2294275600C5A47E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79E31CEA2294275600C5A47E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79E31CE92294275600C5A47E /* KnowYourSign.app */,
+				79E31D082294745700C5A47E /* KnowYourSignTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79E31CEB2294275600C5A47E /* KnowYourSign */ = {
+			isa = PBXGroup;
+			children = (
+				79E31CEC2294275600C5A47E /* AppDelegate.swift */,
+				79E1F1F82295C63700450318 /* Layout */,
+				79E31D152294873000C5A47E /* ViewModel */,
+				79E31D142294872000C5A47E /* Model */,
+				79E31CF32294275800C5A47E /* Assets.xcassets */,
+				79E31CF52294275800C5A47E /* LaunchScreen.storyboard */,
+				79E31CF82294275800C5A47E /* Info.plist */,
+			);
+			path = KnowYourSign;
+			sourceTree = "<group>";
+		};
+		79E31D092294745700C5A47E /* KnowYourSignTests */ = {
+			isa = PBXGroup;
+			children = (
+				79E31D0A2294745700C5A47E /* KnowYourSignTests.swift */,
+				79E31D0C2294745700C5A47E /* Info.plist */,
+			);
+			path = KnowYourSignTests;
+			sourceTree = "<group>";
+		};
+		79E31D142294872000C5A47E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79E31CFE22942F3800C5A47E /* UserSignModel.swift */,
+				79E31D022294335E00C5A47E /* ZodiacSignModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		79E31D152294873000C5A47E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				79E31D0022942F4D00C5A47E /* UserSignViewModel.swift */,
+				79E31D12229486BF00C5A47E /* ZodiacSignViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79E31CE82294275600C5A47E /* KnowYourSign */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E31CFB2294275800C5A47E /* Build configuration list for PBXNativeTarget "KnowYourSign" */;
+			buildPhases = (
+				79E31CE52294275600C5A47E /* Sources */,
+				79E31CE62294275600C5A47E /* Frameworks */,
+				79E31CE72294275600C5A47E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KnowYourSign;
+			productName = KnowYourSign;
+			productReference = 79E31CE92294275600C5A47E /* KnowYourSign.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79E31D072294745700C5A47E /* KnowYourSignTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E31D0F2294745700C5A47E /* Build configuration list for PBXNativeTarget "KnowYourSignTests" */;
+			buildPhases = (
+				79E31D042294745700C5A47E /* Sources */,
+				79E31D052294745700C5A47E /* Frameworks */,
+				79E31D062294745700C5A47E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79E31D0E2294745700C5A47E /* PBXTargetDependency */,
+			);
+			name = KnowYourSignTests;
+			productName = KnowYourSignTests;
+			productReference = 79E31D082294745700C5A47E /* KnowYourSignTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79E31CE12294275600C5A47E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = CS;
+				TargetAttributes = {
+					79E31CE82294275600C5A47E = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					79E31D072294745700C5A47E = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 79E31CE82294275600C5A47E;
+					};
+				};
+			};
+			buildConfigurationList = 79E31CE42294275600C5A47E /* Build configuration list for PBXProject "KnowYourSign" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79E31CE02294275600C5A47E;
+			productRefGroup = 79E31CEA2294275600C5A47E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79E31CE82294275600C5A47E /* KnowYourSign */,
+				79E31D072294745700C5A47E /* KnowYourSignTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79E31CE72294275600C5A47E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E31CF72294275800C5A47E /* LaunchScreen.storyboard in Resources */,
+				79E31CF42294275800C5A47E /* Assets.xcassets in Resources */,
+				79E31CF22294275600C5A47E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E31D062294745700C5A47E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79E31CE52294275600C5A47E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E31CEF2294275600C5A47E /* ViewController.swift in Sources */,
+				79E1F1F72295C63000450318 /* CardLayout.swift in Sources */,
+				79E31D13229486BF00C5A47E /* ZodiacSignViewModel.swift in Sources */,
+				79E31CFF22942F3800C5A47E /* UserSignModel.swift in Sources */,
+				79E31D0122942F4D00C5A47E /* UserSignViewModel.swift in Sources */,
+				79E31D032294335E00C5A47E /* ZodiacSignModel.swift in Sources */,
+				79E31CED2294275600C5A47E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E31D042294745700C5A47E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E31D0B2294745700C5A47E /* KnowYourSignTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79E31D0E2294745700C5A47E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79E31CE82294275600C5A47E /* KnowYourSign */;
+			targetProxy = 79E31D0D2294745700C5A47E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		79E31CF02294275600C5A47E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79E31CF12294275600C5A47E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		79E31CF52294275800C5A47E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79E31CF62294275800C5A47E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79E31CF92294275800C5A47E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		79E31CFA2294275800C5A47E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79E31CFC2294275800C5A47E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LHG2CZY7Q;
+				INFOPLIST_FILE = KnowYourSign/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = costar.KnowYourSign;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79E31CFD2294275800C5A47E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LHG2CZY7Q;
+				INFOPLIST_FILE = KnowYourSign/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = costar.KnowYourSign;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		79E31D102294745700C5A47E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LHG2CZY7Q;
+				INFOPLIST_FILE = KnowYourSignTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = costar.KnowYourSignTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KnowYourSign.app/KnowYourSign";
+			};
+			name = Debug;
+		};
+		79E31D112294745700C5A47E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LHG2CZY7Q;
+				INFOPLIST_FILE = KnowYourSignTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = costar.KnowYourSignTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KnowYourSign.app/KnowYourSign";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79E31CE42294275600C5A47E /* Build configuration list for PBXProject "KnowYourSign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E31CF92294275800C5A47E /* Debug */,
+				79E31CFA2294275800C5A47E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79E31CFB2294275800C5A47E /* Build configuration list for PBXNativeTarget "KnowYourSign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E31CFC2294275800C5A47E /* Debug */,
+				79E31CFD2294275800C5A47E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79E31D0F2294745700C5A47E /* Build configuration list for PBXNativeTarget "KnowYourSignTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E31D102294745700C5A47E /* Debug */,
+				79E31D112294745700C5A47E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79E31CE12294275600C5A47E /* Project object */;
+}
