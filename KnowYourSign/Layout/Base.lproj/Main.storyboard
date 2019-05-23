@@ -18,16 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sun Sign Check" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOI-ZS-f4j">
-                                <rect key="frame" x="25" y="134" width="364" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sun Sign Check" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOI-ZS-f4j">
+                                <rect key="frame" x="129.5" y="134" width="155.5" height="25.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59h-lt-qVu">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59h-lt-qVu">
                                 <rect key="frame" x="35" y="179" width="335" height="250"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8B5-mg-UJR" customClass="CardLayout" customModule="KnowYourSign" customModuleProvider="target">
                                         <rect key="frame" x="8" y="8" width="319" height="234"/>
@@ -60,7 +58,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="name"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7T-by-4rk" userLabel="Your Name BG">
                                                 <rect key="frame" x="0.0" y="0.0" width="319" height="36"/>
@@ -125,15 +123,26 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="2zv-H9-wlF"/>
+                                    <constraint firstAttribute="width" constant="335" id="CbR-DY-JvV"/>
+                                </constraints>
                             </scrollView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="h32-tV-9b5">
-                                <rect key="frame" x="134" y="444" width="146" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="h32-tV-9b5">
+                                <rect key="frame" x="195.5" y="444" width="23" height="37"/>
                                 <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="currentPageIndicatorTintColor" red="0.2627450980392157" green="0.2627450980392157" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                             </pageControl>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IOI-ZS-f4j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="88R-7A-GJr"/>
+                            <constraint firstItem="59h-lt-qVu" firstAttribute="top" secondItem="IOI-ZS-f4j" secondAttribute="bottom" constant="19.5" id="W9t-KL-xPG"/>
+                            <constraint firstItem="h32-tV-9b5" firstAttribute="top" secondItem="59h-lt-qVu" secondAttribute="bottom" constant="15" id="Ydj-X7-KcJ"/>
+                            <constraint firstItem="IOI-ZS-f4j" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="bc3-bs-ug9"/>
+                            <constraint firstItem="59h-lt-qVu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oFG-Ah-STZ"/>
+                            <constraint firstItem="h32-tV-9b5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pBV-51-zVw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>

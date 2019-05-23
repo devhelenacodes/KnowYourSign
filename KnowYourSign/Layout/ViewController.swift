@@ -90,7 +90,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         resultsLabel.text =  viewModel.setLabelString(name: nameField.text, sign: resultsStrLabel)
 
         resultsLabel.sizeToFit()
-        view.endEditing(true)
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
