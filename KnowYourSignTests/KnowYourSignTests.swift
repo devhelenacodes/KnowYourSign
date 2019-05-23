@@ -18,7 +18,6 @@ class KnowYourSignTests: XCTestCase {
         let currDate = Calendar.current.date(from: dateComp) as Date?
         
         XCTAssertEqual("Leo", KnowYourSign.UserSignViewModel().getSign(from: (currDate)!))
-        //XCTAssertEqual("Pisces", KnowYourSign.UserSignViewModel().getSign(from: (currDate)!))
         
     }
 

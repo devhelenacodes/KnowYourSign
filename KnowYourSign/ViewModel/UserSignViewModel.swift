@@ -25,11 +25,11 @@ internal final class UserSignViewModel {
             if currDate! >= items[i].startDate && currDate! <= items[i].endDate {
                 horoscope = items[i].name
                 i = total
-                return horoscope ?? SignNames.Pisces.rawValue
+                return horoscope ?? SignNames.Capricorn.rawValue
             }
             i = i + 1
         }
-        return SignNames.Pisces.rawValue
+        return SignNames.Capricorn.rawValue
     }
     
     func setLabelString(name: String?, sign: String?) -> String {
@@ -46,7 +46,6 @@ internal final class UserSignViewModel {
         } else {
             newString = newString! + "your sun is not yet revealed. Enter your birth date."
         }
-        print("RUNS")
 
         return newString!
         
