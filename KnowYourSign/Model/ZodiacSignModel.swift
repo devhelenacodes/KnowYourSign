@@ -23,7 +23,6 @@ public enum SignNames : String {
     case Pisces = "Pisces"
 }
 
-
 struct ZodiacSign : Decodable {
     let name : String
     let startDate : Date

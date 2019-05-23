@@ -16,25 +16,41 @@ internal final class UserSignViewModel {
         let items = ZodiacSigns.shared.signs
         let total = items.count - 1
         let horoscope : String?
-        var i = 0
         
+        let newDate = Calendar.current.dateComponents([.month, .day], from: date)
+        let currDate = Calendar.current.date(from: newDate) as Date?
+        
+        var i = 0
         while i < total {
-            if date >= items[i].startDate && date <= items[i].endDate {
+            if currDate! >= items[i].startDate && currDate! <= items[i].endDate {
                 horoscope = items[i].name
                 i = total
-                return horoscope ?? "Pisces"
+                return horoscope ?? SignNames.Pisces.rawValue
             }
             i = i + 1
         }
-        
-        return "Pisces"
+        return SignNames.Pisces.rawValue
     }
     
-    func convertDate(from dateString: String) -> Date {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .long
-        let newDate = dateFormatter.date(from: dateString)!
+    func setLabelString(name: String?, sign: String?) -> String {
+        var newString : String?
         
-        return newDate
+        if name != "" {
+            newString =  "Hello \(name!), "
+        } else {
+            newString =  "Hello Stranger, "
+        }
+        
+        if sign != nil {
+            newString = newString! + "your sun is in \(sign!)."
+        } else {
+            newString = newString! + "your sun is not yet revealed. Enter your birth date."
+        }
+        print("RUNS")
+
+        return newString!
+        
     }
+    
+
 }
